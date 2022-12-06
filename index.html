@@ -1,1 +1,30 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div onclick="creatBlock()"class="button">Добавить новый блок </div>
+<div class="box">
+</div>
+<div onclick="creatBlock2()"class="button">Добавить 3 новых блока </div>
+<script src="./main.js"></script>
+</body>
+</html> 
+main
+function creatBlock() {
+    let box = document.querySelector('.box')
+    let newBlock = document.createElement('div')
+    newBlock.classList = ('mini')
+    box.append(newBlock)}
+    function creatBlock2() {
+        for(let i= 1; i<=3; i++)
+        {let box = document.querySelector('.box')
+        let newBlock = document.createElement('div')
+        newBlock.classList = ('mini')
+        box.append(newBlock)}
+     }
